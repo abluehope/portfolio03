@@ -1,3 +1,7 @@
+body {
+  word-break: keep-all;
+}
+
 .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -438,7 +442,7 @@ h1 img {
 .main_feature .freature_tab .freature_tab_link {
   margin: 0 0 55px 0;
   display: flex;
-  gap: 20px;
+  gap: 8px;
   justify-content: center;
 }
 
@@ -902,6 +906,7 @@ h1 img {
     position: absolute;
     left: 0;
     width: 100%;
+    padding: 0 15px;
     z-index: 999;
     text-align: center;
   }
@@ -934,9 +939,9 @@ h1 img {
   }
 
   .main_brand .content .content_wrap .txt_box h3::before {
-    top: 440px;
+    top: 55%;
     right: 0;
-    width: 350px;
+    width: 330px;
     height: 8px;
     background: #9c1d1d;
   }
@@ -959,6 +964,7 @@ h1 img {
   .main_feature .freature_tab .freature_tab_link {
     display: grid;
     grid-template-columns: repeat(3, 105px);
+    gap: 30px;
   }
 
   .main_feature .freature_tab .freature_tab_content .con {
@@ -1032,7 +1038,7 @@ h1 img {
   .to_top {
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 0;
     z-index: 999;
 
     opacity: 0;
@@ -1041,7 +1047,7 @@ h1 img {
   }
 
   .to_top.on {
-    bottom: 10px;
+    bottom: 0;
     visibility: visible;
     opacity: 1;
   }
