@@ -37,9 +37,10 @@ body {
   left: 0;
   right: 0;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   word-break: keep-all;
   z-index: 999;
+
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.7));
 }
 
 .header.on {
@@ -681,13 +682,13 @@ h1 img {
     color: #fff;
   }
 
-  .header.on .inner {
-    height: 100px;
-  }
-
   .header h1 {
     position: fixed;
     z-index: 1000;
+  }
+
+  .header .inner {
+    height: 80px;
   }
 
   .header.on h1 img {
@@ -738,7 +739,7 @@ h1 img {
     display: block;
 
     position: fixed;
-    inset: 30px 30px auto auto;
+    inset: 27px 30px auto auto;
     z-index: 1000;
     width: 30px;
     height: 30px;
@@ -823,6 +824,11 @@ h1 img {
 
   .main_visual .main_slide .slogan {
     text-align: center;
+  }
+
+  .main_visual .main_slide .itm h2 {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .main_visual .main_slide .main_slide_nk .slogan p {

@@ -1,4 +1,13 @@
 $(function () {
+  $(".mobile_btn").on("click", function () {
+    $(this).toggleClass("on");
+    $(".gnb").toggleClass("on");
+  });
+
+  $(".gnb").on("wheel touchmove", function (e) {
+    e.preventDefault();
+  });
+
   $(window).on("scroll", function () {
     let sct = $(window).scrollTop();
     if (sct > 0) {
@@ -6,15 +15,6 @@ $(function () {
     } else {
       $(".header, .to_top").removeClass("on");
     }
-  });
-
-  $(".mobile_btn").on("click", function () {
-    $(this).toggleClass("on");
-    $(".gnb").toggleClass("on");
-  });
-
-  $(window).on("resize", function () {
-    $(".gnb").removeAttr("style");
   });
 
   $(".main_slide").on("init afterChange", function (e, s, c) {
