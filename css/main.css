@@ -968,9 +968,7 @@ h1 img {
   /* section 03 */
 
   .main_feature .freature_tab .freature_tab_link {
-    display: grid;
-    grid-template-columns: repeat(3, 105px);
-    gap: 30px;
+    flex-wrap: wrap;
   }
 
   .main_feature .freature_tab .freature_tab_content .con {
@@ -989,6 +987,10 @@ h1 img {
     margin: 0 0 10px 2px;
     font-size: 14px;
     color: #999;
+  }
+
+  .main_feature .freature_tab .freature_tab_link li {
+    margin: 0 0 16px 0;
   }
 
   .main_feature .freature_tab .freature_tab_content .txt_box h3 {
