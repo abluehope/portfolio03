@@ -682,6 +682,10 @@ h1 img {
     color: #fff;
   }
 
+  .sec {
+    padding: 80px 0;
+  }
+
   .header h1 {
     position: fixed;
     z-index: 1000;
@@ -821,6 +825,11 @@ h1 img {
   /* main */
 
   /* 메인 슬라이드 */
+
+  .main_visual .main_slide .itm {
+    position: relative;
+    height: 65vh;
+  }
 
   .main_visual .main_slide .slogan {
     text-align: center;
@@ -1003,6 +1012,12 @@ h1 img {
 
   .main_feature .freature_tab .freature_tab_content .img_box .img {
     width: 100%;
+  }
+
+  /* section 04 */
+
+  .main_banner .tit h2 {
+    line-height: 38px;
   }
 
   /* footer */
